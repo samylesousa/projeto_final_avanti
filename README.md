@@ -15,3 +15,4 @@ Todas as seções possuem informações sobre a cultura que cerca o período, in
 
 * Na parte referente aos filmes produzidas após os anos 2000, eu pedi pro chatgpt desenvolver quais filmes poderiam ser produzidos no futuro, pois eu precisava dos posters e pensei em utilizar a tecnologia ao meu favor.
 * Todas as fotos, com exceçao dos posters de filmes do futuro, foram retiradas da internet mesmo.
+* Utilizei o iframe para colocar as músicas do spotify no site.
