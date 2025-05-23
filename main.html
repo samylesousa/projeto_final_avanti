@@ -7,56 +7,412 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    
     <header>
+        <!-- Menu da aplicação -->
         <nav>
             <div>
                 <p>Time Capsule 3025</p>
             </div>
             <ul>
-                <li><a href="#antes-milenio">Pré Milênio</a></li>
-                <li><a class="active" href="#milenio">Milênio</a></li>
-                <li><a href="#pos-milenio">Pós Milênio</a></li>
+                <li id="passado"><a href="#antes-milenio">Pré Milênio</a></li>
+                <li id="atual"><a class="active" href="#milenio">Milênio</a></li>
+                <li id="futuro"><a href="#pos-milenio">Pós Milênio</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Existem 3 seções, uma para cada período -->
         <section id="antes-milenio">
             <h3>Pré Milênio</h3>
-            <article>Tecnologia</article>
-            <article>Música</article>
-            <article>Filmes</article>
-            <article>Moda</article>
-            <article>Meio Ambiente</article>
-            <article>Política Mundial</article>
+            <article>
+                <h4>Tecnologia</h4>
+
+                <!-- uma div para armazenar os cards que indicam como a tecnologia é na época  -->
+                <div  class="cards">
+                    <div class="card">
+                        <p>O jornal impresso continua no mercado, 
+                            mas em 1999 era muito comum as pessoas lerem nas ruas ou em qualquer lugar.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <p>As pessoas não conseguiam baixar filmes na internet, 
+                            assistir filmes em DVD e canal fechado eram opções mais caras. 
+                            Para economizar usam o popular VHS.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <p>Não existia streaming (Netflix, HBO max etc). As pessoas 
+                            procuravam o que assistir nas locadores.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <p>A câmera digital ainda não exista, por isso as pessoas precisavam ter rolos de filme 
+                            para tirar as fotos das câmeras analógicas.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <p>Pendrive não existia na época, o jeito mais fácil de guardar os arquivos era utilizando um disquete</p>
+                    </div>
+
+                    <div class="card">
+                        <p>As pessoas imprimiam os trajetos 
+                            que precisavam fazer para chegar em um determinado local.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <p>Os pagamentos eram todos feitos em bancos físicos. Não existia serviços online para bancos.</p>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <h4>Música</h4>
+
+                <!-- Mostrando as músicas populares do período -->
+                <div class="musicas">
+                    <div class="card-musica">
+                        <h5>Madonna</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/27QvYgBk0CHOVHthWnkuWt?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica">
+                        <h5>Michael Jackson</h5>
+                        <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/3S2R0EVwBSAVMd5UMgKTL0?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica">
+                        <h5>The Beatles</h5>
+                        <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/6dGnYIeXmHdcikdzNNDMm2?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica">
+                        <h5>Whitney Houston</h5>
+                        <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/4eHbdreAnSOrDDsFfc4Fpm?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica">
+                        <h5>Elvis Presley</h5>
+                        <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/44AyOl4qVkzS48vBsbNXaC?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <h4>Filmes</h4>
+                <!-- Mostrando os filmes populares do período -->
+                    <div class="cards-filmes">
+                        <div class="card-filme">
+                            <h5>Clube de luta - 1999</h5>
+                            <img src="img/pre2000/filmes/clube-de-luta.jpg" alt="Clube de luta" />
+                        </div>
+                        <div class="card-filme">
+                            <h5>De volta pro futuro - 1985</h5>
+                            <img src="img/pre2000/filmes/de-volta-pro-futuro.jpg" alt="De volta pro futuro" />
+                        </div>
+                        <div class="card-filme">
+                            <h5>O poderoso chefão - 1972</h5>
+                            <img src="img/pre2000/filmes/poderoso-chefao.jpg" alt="O poderoso chefão" />
+                        </div>
+                        <div class="card-filme">
+                            <h5>2001: Uma odisseia no espaço - 1968</h5>
+                            <img src="img/pre2000/filmes/2001.jpg" alt="2001: Uma odisseia no espaço" />
+                        </div>
+                        <div class="card-filme">
+                            <h5>12 homens e uma sentença - 1957</h5>
+                            <img src="img/pre2000/filmes/12-homens.jpg" alt="12 Homens e uma Sentença" />
+                        </div>
+                    </div>
+            </article>
+            <article class="galeria">
+                <h4>Moda</h4>
+                <!-- O que as pessoas estavam vestindo -->
+                <div class="slides">
+                    <img src="img/pre2000/moda/foto1.png" alt="homens vestidos nos anos 40" />
+                    <img src="img/pre2000/moda/foto2.png" alt="mulheres vestidas nos anos 1800" />
+                    <img src="img/pre2000/moda/foto3.png" alt="casal vestido na era vitoriana" />
+                    <img src="img/pre2000/moda/foto4.png" alt="mulheres vestidas nos anos 1900" />
+                    <img src="img/pre2000/moda/foto5.png" alt="homens vestidos nos anos 70" />
+                    <img src="img/pre2000/moda/foto6.png" alt="mulheres vestidas nos anos 50" />
+                    <img src="img/pre2000/moda/foto7.png" alt="homens vestidos nos anos 50" />
+                    <img src="img/pre2000/moda/foto8.png" alt="mulheres vestidas nos anos 60" />
+                    <img src="img/pre2000/moda/foto9.png" alt="homem vestido nos anos 80" />
+                    <img src="img/pre2000/moda/foto10.png" alt="mulheres vestidas nos anos 40/50" />
+                </div>
+            </article>
         </section>
 
 
         <section id="milenio">
             <h3>Milênio</h3>
-            <article>Tecnologia</article>
-            <article>Música</article>
-            <article>Filmes</article>
-            <article>Moda</article>
-            <article>Meio Ambiente</article>
-            <article>Política Mundial</article>
+            <article>
+                <h4>Tecnologia</h4>
+                <!-- uma div para armazenar os cards que indicam como a tecnologia é na época  -->
+                <div  class="cards">
+                    <div class="card-milenio">
+                        <p>As pessoas não leem jornais, e a maioria das notícias são
+                            adquiridas mediante redes sociais, resultando em informações mais rápidas,
+                            porém menos confiáveis.
+                        </p>
+                    </div>
+                    <div class="card-milenio">
+                        <p>Mídias físicas não estão em alta, é justamente o oposto. Tudo é adquirido em formato digital.
+                        </p>
+                    </div>
+
+                    <div class="card-milenio">
+                        <p>Os streamings dominam o mundo, tudo é por assinatura, de futebol até música.
+                        </p>
+                    </div>
+
+                    <div class="card-milenio">
+                        <p>Câmeras são apenas para fotógrafos, pois a maior parte das pessoas utiliza seus celulares
+                            para tirar fotos.
+                        </p>
+                    </div>
+                    <div class="card-milenio">
+                        <p>Os arquivos, fotos, músicas e vídeos, em maior parte são guardados na nuvem.</p>
+                    </div>
+
+                    <div class="card-milenio">
+                        <p>O GPS e o Google Maps dominam no lugar dos mapas.
+                        </p>
+                    </div>
+
+                    <div class="card-milenio">
+                        <p>Em razão do crescimento das atividades monetárias online, as pessoas apenas
+                            vão em bancos físicos quando é extremamente necessário.
+                        </p>
+                    </div>
+                </div>
+            <article>
+                <h4>Música</h4>
+                <div class="musicas">
+                <!-- Mostrando as músicas populares do período -->
+                    <div class="card-musica-milenio">
+                        <h5>Taylor Swift</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7Mts0OfPorF4iwOomvfqn1?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-milenio">
+                        <h5>Olivia Rodrigo</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3IX0yuEVvDbnqUwMBB3ouC?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-milenio">
+                        <h5>Lady Gaga</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2x7MyWybabEz6Y6wvHuwGE?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-milenio">
+                        <h5>Imagine Dragons</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7MXlTgQeo3IVlMpLnZuhxc?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-milenio">
+                        <h5>Sabrina Carpenter</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2qSkIjg1o9h3YT9RAgYN75?utm_source=generator"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <h4>Filmes</h4>
+                <!-- Mostrando os filmes populares do período -->
+                    <div class="cards-filmes">
+                        <div class="card-filme-milenio">
+                            <h5>Barbie - 2023</h5>
+                            <img src="img/2000/filmes/filme001.jpg" alt="Barbie" />
+                        </div>
+                        <div class="card-filme-milenio">
+                            <h5>Duna - 2021</h5>
+                            <img src="img/2000/filmes/filme002.jpg" alt="Duna" />
+                        </div>
+                        <div class="card-filme-milenio">
+                            <h5>Interestelar - 2014</h5>
+                            <img src="img/2000/filmes/filme003.jpg" alt="Interestelar" />
+                        </div>
+                        <div class="card-filme-milenio">
+                            <h5>A Viagem de Chihiro - 2001</h5>
+                            <img src="img/2000/filmes/filme004.jpg" alt="A Viagem de Chihiro" />
+                        </div>
+                        <div class="card-filme-milenio">
+                            <h5>O Senhor dos Anéis - A Irmandade do Anel - 2001</h5>
+                            <img src="img/2000/filmes/filme005.jpg" alt="O Senhor dos Anéis - A Irmandade do Anel" />
+                        </div>
+                    </div>
+            </article>
+            <article class="galeria">
+                <h4>Moda</h4>
+                <!-- O que as pessoas estavam vestindo -->
+                <div class="slides-milenio">
+                    <img src="img/2000/moda/foto01.png" alt="pessoas vestidas nos anos 2000" />
+                    <img src="img/2000/moda/foto02.png" alt="mulheres vestidas nos anos 2000" />
+                    <img src="img/2000/moda/foto03.png" alt="mulher vestida nos anos 2010" />
+                    <img src="img/2000/moda/foto04.png" alt="pessoas vestidas nos anos 2010" />
+                    <img src="img/2000/moda/foto05.png" alt="pessoas vestidas nos anos 2010" />
+                    <img src="img/2000/moda/foto06.png" alt="homens vestidas nos anos 2020" />
+                    <img src="img/2000/moda/foto07.png" alt="homens vestidos nos anos 2020" />
+                    <img src="img/2000/moda/foto08.png" alt="mulher vestida anos 2020" />
+                    <img src="img/2000/moda/foto09.png" alt="homens vestidos anos 2020" />
+                </div>
+            </article>
         </section>
 
         <section id="pos-milenio">
             <h3>Pós Milênio</h3>
-            <article>Tecnologia</article>
-            <article>Música</article>
-            <article>Filmes</article>
-            <article>Moda</article>
-            <article>Meio Ambiente</article>
-            <article>Política Mundial</article>
+            <article>
+                <h4>Tecnologia</h4>
+                <!-- uma div para armazenar os cards que indicam como a tecnologia é na época  -->
+                 <!-- Em relação a essa parte eu só usei minha imaginação mesmo e o que eu acho que vai acontecer no futuro. -->
+                <div  class="cards">
+                    <div class="card-pos">
+                        <p>As pessoas não leem jornais e nem blogs ou redes sociais, pois a maioria das notícias e
+                            informações são enviadas diretamente para elas através de ondas para os seus pensamentos.
+                        </p>
+                    </div>
+                    <div class="card-pos">
+                        <p>Mídias físicas voltaram a estar em alta, pois os preços de mídias digitais aumentaram em razão
+                            de questões de fiscalização.
+                        </p>
+                    </div>
+
+                    <div class="card-pos">
+                        <p>Os streamings continuam dominando o mundo, dessa vez até restaurantes se tornaram serviços por 
+                            assinatura.
+                        </p>
+                    </div>
+
+                    <div class="card-pos">
+                        <p>Câmeras são apenas para jornalistas e funcionários ligados a grande imprensa. As pessoas
+                             continuam usando seus celulares para tirar fotos.
+                        </p>
+                    </div>
+                    <div class="card-pos">
+                        <p>Os arquivos, fotos, músicas e vídeos, ainda são guardados na nuvem, no entanto o preço das
+                            assinaturas desses serviços aumentam com o passar dos anos.
+                        </p>
+                    </div>
+
+                    <div class="card-pos">
+                        <p>O GPS e o Google Maps agora são apenas para militares. O serviço de transporte público evoluiu muito.
+                        </p>
+                    </div>
+
+                    <div class="card-pos">
+                        <p>Dinheiro físico não existe mais.
+                        </p>
+                    </div>
+                </div>
+            <article>
+            <article>
+                <h4>Música</h4>
+                <div class="musicas">
+                <!-- Mostrando as músicas populares do período -->
+                 <!-- Para esse caso eu apenas considerei o que eu acho que são músicas futuristas -->
+                    <div class="card-musica-pos">
+                        <h5>Grimes</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4keclC0eBhQm8lFtYmX01K?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-pos">
+                        <h5>Lucidbeatz</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6ZteWi8a57gu2RnO3yjY8K?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-pos">
+                        <h5>Mikeeysmind</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1HNGqclYqzTFeJZuwbjqrF?utm_source=generator"
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-pos">
+                        <h5>Stiig</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/606gfW659CW05XqPe1Cobl?utm_source=generator"
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-musica-pos">
+                        <h5>Øneheart</h5>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/74cZW8ft2YkzUv4xM1AsT9?utm_source=generator" 
+                        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <h4>Filmes</h4>
+                <!-- Mostrando os filmes populares do período -->
+                 <!-- Para esse caso eu tentei usar a tecnologia ao meu favor, e pedi pro chatgpt criar alguns filmes
+                 que poderiam ser produzidos no futuro. -->
+                    <div class="cards-filmes">
+                        <div class="card-filme-pos">
+                            <h5>ALPHA: Código da Origem - 3002</h5>
+                            <img src="img/pos2000/filmes/filme001.png" alt="ALPHA: Código da Origem" />
+                        </div>
+                        <div class="card-filme-pos">
+                            <h5>Terras do Vácuo - 3057</h5>
+                            <img src="img/pos2000/filmes/filme002.png" alt="Terras do Vácuo" />
+                        </div>
+                        <div class="card-filme-pos">
+                            <h5>Flor de Silício - 3120</h5>
+                            <img src="img/pos2000/filmes/filme003.png" alt="Flor de Silício" />
+                        </div>
+                        <div class="card-filme-pos">
+                            <h5>O Último Filme Humano - 3299</h5>
+                            <img src="img/pos2000/filmes/filme004.png" alt="O Último Filme Humano" />
+                        </div>
+                        <div class="card-filme-pos">
+                            <h5>Guerra das Palavras: Ressonância Final - 3401</h5>
+                            <img src="img/pos2000/filmes/filme005.png" alt="Guerra das Palavras: Ressonância Final" />
+                        </div>
+                    </div>
+            </article>
+            <article class="galeria">
+                <h4>Moda</h4>
+                <!-- O que as pessoas estavam vestindo -->
+                <div class="slides-pos">
+                    <img src="img/pos2000/moda/foto001.png" alt="pessoas vestidas nos anos 3000" />
+                    <img src="img/pos2000/moda/foto002.png" alt="mulheres vestidas nos anos 3100" />
+                    <img src="img/pos2000/moda/foto003.png" alt="mulheres vestidas nos anos 3100" />
+                    <img src="img/pos2000/moda/foto004.png" alt="mulheres vestidas nos anos 3500" />
+                    <img src="img/pos2000/moda/foto005.png" alt="homens vestidos nos anos 4200" />
+                    <img src="img/pos2000/moda/foto006.png" alt="pessoas vestidas nos anos 3900" />
+                    <img src="img/pos2000/moda/foto007.png" alt="pessoas vestidas nos anos 4000" />
+                    <img src="img/pos2000/moda/foto008.png" alt="pessoas vestidas nos anos 3900" />
+                    <img src="img/pos2000/moda/foto009.png" alt="pessoas vestidas nos anos 3800" />
+                </div>
+            </article>
         </section>
 
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <p>Produzido por equipe 7</p>
+    </footer>
     
 </body>
 </html>
