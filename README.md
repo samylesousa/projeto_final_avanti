@@ -8,7 +8,7 @@ Todas as seções possuem informações sobre a cultura que cerca o período, in
 * Moda
 
 
-## Fontes utilizada
+## Fontes utilizadas
 * https://noticias.r7.com/tecnologia-e-ciencia/fotos/antes-dos-anos-2000-conheca-21-habitos-tecnologicos-de-1999-07072017/
 
 ## Detalhes adicionais
